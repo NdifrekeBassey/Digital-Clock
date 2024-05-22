@@ -7,3 +7,6 @@ Welcome to the Digital Clock Website! This project displays the current time in 
 - Shows current time in HH:MM:SS format
 - Responsive design for all devices
 - Easy to customize
+
+View the page via this link
+https://ndifrekebassey.github.io/Digital-Clock/
