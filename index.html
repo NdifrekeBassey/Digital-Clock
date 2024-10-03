@@ -2,31 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Clock</title>
+    <title>Modern Digital Clock</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="background-blur"></div>
-    <h2>Digital_Clock</h2>
-    <div class="clock">
-      <div>
-        <span id="hour">00</span>
-        <span class="text">Hours</span>
+    <div class="clock-container">
+      <h2>Digital Clock</h2>
+      <div class="clock">
+        <div class="time">
+          <span id="hour">00</span> :
+          <span id="minutes">00</span> :
+          <span id="seconds">00</span>
+          <span id="ampm">AM</span>
+        </div>
       </div>
-      <div>
-        <span id="minutes">00</span>
-        <span class="text">Minutes</span>
-      </div>
-      <div>
-        <span id="seconds">00</span>
-        <span class="text">Seconds</span>
-      </div>
-      <div>
-        <span id="ampm">AM</span>
-      </div>
+      
+      <!-- Toggle button for 12-hour/24-hour format -->
+      <button id="toggleFormat">Switch to 24-hour format</button>
+      
+      <!-- Button and input for changing background image -->
+      <button id="changeBgBtn">Change Background</button>
+      <input type="file" id="bgInput" accept="image/*" style="display:none;" />
+      
+      <!-- Copyright -->
+      <footer>
+        <p>&copy; 2024 Eagletech. All rights reserved.</p>
+      </footer>
     </div>
 
     <script src="index.js"></script>
